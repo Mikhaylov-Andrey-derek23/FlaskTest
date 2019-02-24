@@ -1,0 +1,24 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Flasky{% endblock %}
+
+{% block navbar %}
+
+
+<nav class="navbar navbar-inverse ">
+  <!-- Навигационная панель содержимое -->  
+  <div class="container">
+          <a class="navbar-brand" href="user/Name">Flasky</a>
+          <a class="navbar-brand" href="/">Home</a>
+    </div>
+</nav>
+
+{% endblock %}
+
+{% block content%}
+
+<div class="container">
+        {% block page_container %}{% endblock %}
+</div>
+    
+
+{% endblock %}
